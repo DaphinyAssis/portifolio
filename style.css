@@ -1,0 +1,306 @@
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    body {
+        overflow: auto;
+    }
+
+    .pg2 {
+        width: 100%; 
+    }
+
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(fonts/LEMONMILK-Regular.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
+    scroll-behavior: smooth !important;
+}
+
+body{
+    background-color: #f0f8ff;
+    width: 960px;
+    overflow-x: hidden;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #bcc0c4;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #9358a4;
+}
+
+.header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 70px;
+   background-color: #fff;
+   box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+   z-index: 100 ;
+}
+.header button.logo{
+    margin-top: 20px;
+    margin-left: 2%;
+    float: left;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family:  Coolvetica;
+    font-size: 20px;
+    height: 30px;
+}
+
+.header a{
+    margin-top: 25px;
+    margin-right: 1%;
+    float: right;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Coolvetica;
+}
+
+.header button{
+    margin-top: 25px;
+    margin-right: 1%;
+    float: right;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family:  Coolvetica;
+    font-size: 15px;
+}
+
+.header button.btn-right{
+    position: relative;
+    top: -26px ;
+    margin:0;
+    padding: 25px 5px;
+    float: right;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #263238;
+    text-decoration: none;
+    font-family:  Coolvetica;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+.header button.btn-right:hover {
+    background-color: #bcc0c46a;
+    color: #201b2c;
+}
+
+.icon{
+    position: relative;
+    top: 9rem;
+    left:3rem;
+}
+
+.icon img{
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+.pg1{
+    position: relative;
+    top:-3rem;
+    left:8rem;
+}
+
+.title{ 
+    text-align: left;
+    font-size: 30px;
+    font-family: Coolvetica;
+    line-height: normal;
+    font-style: #fff;
+   
+}
+.title h2{
+    margin:0;
+}
+
+.title p{ 
+    line-height: normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 17px;
+    text-align: justify;
+    
+}
+
+.title button{
+    position: relative;
+    top:-2rem;
+    width: 180px;
+    padding: 13px 0px;
+    border: 2px solid #b869c6;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    font-family: Coolvetica;
+    letter-spacing: 2px;
+    color: #f0f8ff;
+    background-color: #b869c6;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #bcc0c4;
+}
+
+.title button.portfolio:hover{
+        background-color: #f0f8ff; /* Cor de fundo ao passar o mouse */
+        color: #b869c6; /* Cor do texto ao passar o mouse */
+}
+
+.title button.scroll{
+    position: relative;
+    top:4rem;
+    width: 200px;
+    padding: 10px 10px;
+    border:none;
+    outline: none;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    background: url('img/icon dowm.png') no-repeat 165px center;
+    background-size: 20px;
+    color: #b869c6;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.animated{
+    position: relative;
+    top:-23rem;
+    left:60%;  
+}
+.animated img{
+max-width:450px;
+max-height:450px;
+width: auto;
+height: auto;
+}
+.pg2{
+    position: relative;
+    top:-20rem;  
+    left:0;
+}
+.skills{ 
+        text-align: center;
+        font-size: 30px;
+        font-family: Coolvetica;
+        line-height: normal;
+        font-style: #fff;
+}
+
+.skills button {
+    position: relative;
+    width: 175px;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 1px rgba(188,192,196,1);
+    outline: none;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color: #000;
+    background-size: 45px;
+    padding-left: 40px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.skills button.html{
+    background: url('img/skills/icon html.png') no-repeat 10px center;
+}
+.skills button.css{
+    background: url('img/skills/icon css.png') no-repeat 10px center;
+}
+.skills button.js{
+    background: url('img/skills/icon js.png') no-repeat 10px center;
+}
+.skills button.typescript{
+    background: url('img/skills/icon typescript.png') no-repeat 10px center;
+}
+.skills button.node{
+    background: url('img/skills/icon nodejs.png') no-repeat 10px center;
+}
+.skills button.express{
+    background: url('img/skills/icon express.png') no-repeat 10px center;
+}
+.skills button.mysql{
+    background: url('img/skills/icon mysql.png') no-repeat 10px center;
+}
+.skills button.postgre{
+    background: url('img/skills/icon postgresql.png') no-repeat 10px center;
+}
+.skills button.csharp{
+    background: url('img/skills/icon c sharp.png') no-repeat 10px center;
+}
+.skills button.python{
+    background: url('img/skills/icon python.png') no-repeat 10px center;
+}
+.skills button.java{
+    background: url('img/skills/icon java.png') no-repeat 10px center;
+}
+.skills button.excel{
+    background: url('img/skills/icon excel.png') no-repeat 10px center;
+}
+.skills button.figma{
+    background: url('img/skills/icon figma.png') no-repeat 10px center;
+}
+.skills button.canva{
+    background: url('img/skills/icon canva.png') no-repeat 10px center;
+}
+.skills button.photoshop{
+    background: url('img/skills/icon photoshop.png') no-repeat 10px center;
+}
+.skills button.ae{
+    background: url('img/skills/icon ae.png') no-repeat 10px center;
+}
+
+.scroll-top button {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.scroll-top button:hover {
+    color: #b869c6;
+}
+
+.scroll-dowm button {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-dowm button:hover {
+    transform: scale(1.1); 
+}
+
+.pg3{
+    position: relative;
+    top:-20rem;  
+    left:0;
+}
+.projects{ 
+        text-align: center;
+        font-size: 30px;
+        font-family: Coolvetica;
+        line-height: normal;
+        font-style: #fff;
+}
+
+
