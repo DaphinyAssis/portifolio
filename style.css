@@ -1,10 +1,7 @@
-@media screen and (min-width: 1920px) and (min-height: 1080px) {
-    body {
-        overflow: auto;
-    }
-
-    .pg2 {
-        width: 100%; 
+@media screen and (max-width: 768px) and (min-height: 1080px) {
+    .main-container{
+        width: 100%;
+        flex-direction: column;
     }
 
 }
@@ -12,6 +9,12 @@
 @font-face {
     font-family: Coolvetica;
     src: url(fonts/LEMONMILK-Regular.otf);
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 html {
@@ -160,8 +163,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .title button.portfolio:hover{
-        background-color: #f0f8ff; /* Cor de fundo ao passar o mouse */
-        color: #b869c6; /* Cor do texto ao passar o mouse */
+        background-color: #f0f8ff; 
+        color: #b869c6; 
 }
 
 .title button.scroll{
@@ -303,4 +306,94 @@ height: auto;
         font-style: #fff;
 }
 
+.project-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.project-card {
+    position: relative;
+    top:-1rem;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.project-details h3 {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 16px;
+    font-family: Coolvetica;
+    color:#201b2c
+}
+
+.project-details p {
+    position: relative;
+    top:-3rem;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin: 10px 6px;
+    font-size: 12px;
+    color: #555;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-buttons a {
+    position: relative;
+    top:-3rem;
+    left:5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin:none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: #b869c6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.project-buttons img {
+    border: none;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.project-buttons a:hover {
+    background-color: #9358a4;
+}
+
+.project-details button{
+    position: relative;
+    top:-3rem;
+    width: auto;
+    height: auto;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #b869c693;
+    box-shadow: none;
+    outline: none;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    background-size: 45px;
+    margin-bottom: -20px;
+}  

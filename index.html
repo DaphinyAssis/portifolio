@@ -3,10 +3,11 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="Daphiny" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="main-container">
     <div class="header">
      <div class="scroll-top">
         <button class="logo" id="btnTop" onclick="scrollToTop()">Daphiny</button>
@@ -30,7 +31,7 @@
                     <h2 style="color: #9358a4;">Daphiny.</h2>
                     <p>Sou uma estudante de programação me capacitando </p> 
                     <p>para ser uma desenvolvedora Full-Stack!</p> <br>
-                    <button class="portfolio">Ver Portfólio</button><br> 
+                    <a href="#projects"><button  class="portfolio">Ver Portfólio</button></a><br> 
                     <a class="scroll-dowm" href="#skills">
     <button class="scroll">Role para baixo</button>
 </a>                 
@@ -63,16 +64,61 @@
                 </div>
                 <div class="pg3">
                     <div id="projects" class="projects">
-                        <br><br>
+                        <br>
                         <h2 style="color: #201b2c;">Projetos</h2>
-                    
+                        <div class="project-container">
+                            <div class="project-card">
+                                <img src="img/tela jogo da velha.png" alt="Jogo da Velha Capa">
+                                <div class="project-details">
+                                    <h3>Jogo da Velha</h3>
+                                    <div class="project-buttons">
+                                        <a href="https://jogo-da-velha-puce.vercel.app" target="_blank"><img src="img/icon site.png"></a>
+                                        <a href="https://github.com/DaphinyAssis/jogo-da-velha" target="_blank"><img src="img/icon github white.png"></a>
+                                    </div>
+                                    <p>Site de Jogo da Velha contendo mudança de tema, feito com JavaScript</p>
+                                    <button>#HTML</button>
+                                    <button>#CSS</button>
+                                    <button>#JavaScript</button>
+                                </div>
+                            </div>
                         
+                            <div class="project-card">
+                                <img src="img/tela agenda.png" alt="Agenda Medica Capa">
+                                <div class="project-details">
+                                    <h3>Agenda Médica</h3>
+                                    <div class="project-buttons">
+                                        <a href="https://agendamedica.vercel.app" target="_blank"><img src="img/icon site.png"></a>
+                                        <a href="https://github.com/DaphinyAssis/agendamedica" target="_blank"><img src="img/icon github white.png"></a>
+                                    </div>
+                                    <p>Site para facilitar o agendamento de consultas, feito na Linguagem Java com o servidor web Tomcat e MYSQL Workbench como Banco de Dados</p>
+                                    <button>#HTML</button>
+                                    <button>#CSS</button>
+                                    <button>#Java</button>
+                                    <button>#MySQL</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <img src="img/tela cadastro.png" alt="Cadastro Capa">
+                                <div class="project-details">
+                                    <h3>Cadastro</h3>
+                                    <div class="project-buttons">
+                                        <a href="https://agendamedica.vercel.app" target="_blank"><img src="img/icon site.png"></a>
+                                        <a href="https://github.com/DaphinyAssis/agendamedica" target="_blank"><img src="img/icon github white.png"></a>
+                                    </div>
+                                    <p>Site para realizar </p>
+                                        <button>#HTML</button>
+                                        <button>#CSS</button>
+                                        <button>#Java</button>
+                                        <button>#MySQL</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     </div>
         
             
     <br>
-     
+</div>
     <script src="script.js"></script>
 </body>
 </html>
