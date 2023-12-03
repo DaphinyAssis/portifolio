@@ -541,6 +541,14 @@ section{
 
     
 }
+@media (max-width:768){
+    .banner-text h5{
+        line-height: 2;;
+    }
+    .skills{
+        
+    }
+}
 
 
 
