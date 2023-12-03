@@ -11,16 +11,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;0,900;1,400;1,500;1,600;1,700&family=Urbanist&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="#" onclick="scrollToTop()" class="logo">DAPHINY</a>
+        <a href="#" onclick="scrollToTop()" class="logo">Daphiny</a>
     
         <ul class="navlist">
             <li><a href="#skills">Habilidades</a></li>
             <li><a href="#projects">Projetos</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
         </ul>
         
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -32,7 +33,7 @@
             <h5 style="color: #b068bc;">Daphiny.</h5>
             <p>Sou uma estudante de programação me capacitando  
             para ser uma desenvolvedora Full-Stack!</p>
-            <a href="#">VER PORTFÓLIO</a>
+            <a href="#">Ver Portfólio</a>
         </div>
 
         <div class="banner-img">
@@ -48,36 +49,149 @@
     </div>
 
     <div class="scroll-down">
-        <a href="#skills"><i class="ri-arrow-down-s-line"></i></a>
+        <a href="#skills"><i class="ri-arrow-down-double-line"></i></a>
     </div>
-
-    <div id="skills"  class="skills">
-        <div class="skills-text">
-            <hr>
-            <h5>HABILIDADES</h5>
-                
+    <div id="skills" class="pg2">
+        <div class="skills"><br><br><br><br><br><br>
+            <h5 >Habilidades</h5>
+            <div class="containter">
+            <button class="html">HTML</button>
+            <button class="css">CSS</button>
+            <button class="js">JavaScript</button>
+            <button class="typescript">TypeScript</button>
+            <button class="node">Node.js</button>
+            <button class="express">Express.js</button>
+            <button class="mysql">MySQL</button>
+            <button class="postgre">PostgreSQL</button>
+            <button class="csharp">C Sharp</button>
+            <button class="python">Python</button>
+            <button class="java">Java</button>
+            <button class="excel">Excel</button>
+            <button class="figma">Figma</button>
+            <button class="canva">Canva</button>
+            <button class="photoshop">PhotoShop</button>
+            <button class="ae">After Effects</button>
         </div>
-            <div class="container-skills">
-                <div class="skills-btn">
-                    <button class="html">HTML</button>
-                           <button class="css">CSS</button>
-                           <button class="js">JavaScript</button>
-                           <button class="typescript">TypeScript</button>
-                           <button class="node">Node.js</button>
-                           <button class="express">Express.js</button>
-                           <button class="mysql">MySQL</button>
-                           <button class="postgre">PostgreSQL</button>
-                           <button class="csharp">C Sharp</button>
-                           <button class="python">Python</button>
-                           <button class="java">Java</button>
-                           <button class="excel">Excel</button>
-                           <button class="figma">Figma</button>
-                           <button class="canva">Canva</button>
-                           <button class="photoshop">PhotoShop</button>
-                           <button class="ae">After Effects</button>
+        </div>
+        </div>
+        <div class="pg3">
+            <div id="projects" class="projects">
+                <br><br><br><br>
+                <h5>Projetos</h5>
+                <div class="project-container">
+                    <div class="project-card">
+                        <img src="img/tela jogo da velha.png" alt="Jogo da Velha Capa">
+                        <div class="project-details">
+                            <h3>Jogo da Velha</h3>
+                            <div class="project-buttons">
+                                <a href="https://jogo-da-velha-puce.vercel.app" target="_blank"><img src="img/icon site.png"></a>
+                                <a href="https://github.com/DaphinyAssis/jogo-da-velha" target="_blank"><img src="img/icon github white.png"></a>
+                            </div>
+                            <p>Site de Jogo da Velha contendo mudança de tema, feito com JavaScript</p>
+                            <div class="btn-container">
+                            <button>#HTML</button>
+                            <button>#CSS</button>
+                            <button>#JavaScript</button>
+                        </div>
+                        </div>
+                    </div>
+                
+                    <div class="project-card">
+                        <img src="img/tela agenda.png" alt="Agenda Medica Capa">
+                        <div class="project-details">
+                            <h3>Agenda Médica</h3>
+                            <div class="project-buttons">
+                                <a href="https://agendamedica.vercel.app" target="_blank"><img src="img/icon site.png"></a>
+                                <a href="https://github.com/DaphinyAssis/agendamedica" target="_blank"><img src="img/icon github white.png"></a>
+                            </div>
+                            <p>Site para facilitar o agendamento de consultas, feito na Linguagem Java com o servidor web Tomcat e MYSQL Workbench como Banco de Dados</p>
+                            <div class="btn-container">
+                            <button>#HTML</button>
+                            <button>#CSS</button>
+                            <button>#Java</button>
+                            <button>#MySQL</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/tela cadastro.png" alt="Cadastro Capa">
+                        <div class="project-details">
+                            <h3>Gerenciamento de Estoque</h3>
+                            <div class="project-buttons-stock">
+                                <a href="https://cadastro-swart.vercel.app" target="_blank"><img src="img/icon site.png"></a>
+                                <a href="https://github.com/DaphinyAssis/cadastro" target="_blank"><img src="img/icon github white.png"></a>
+                            </div>
+                            <p>Site para realizar Cadastro Geral, tanto como Usuários quanto Produtos, feito com Node.js e JavaScript </p>
+                            <div class="btn-container">    
+                                <button>#HTML</button>
+                                <button>#CSS</button>
+                                <button>#JavaScript</button>
+                                <button>#Node.js</button><br>
+                                <button>#Yarn</button>
+                                <button>#TypeSript</button>
+                                <button>#PostgreSQL</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>    
+            </div>
+            <div class="pg4">
+                <div id="about" class="about">
+                    <br><br>
+                    <h5>Sobre Mim</h5>
+                    <img src="img/foto perfil.png">
+                    <p>Tenho 19 anos, curso Engenharia de Software na UMC  
+                        e sempre fui muito apaixonada por tecnologia. Tudo o que eu  
+                        descobria despertava ainda mais o meu interesse. 
+                        Quando comecei a estudar programação soube na hora que o meu lugar era aqui,
+                        e cada vez que resolvo um bug, 
+                        percebo que o desenvolvimento de software é baseado na curiosidade e na vontade de aprender.
+                        É uma arte em constante evolução,
+                        também percebi que programar é mais que um conjunto de comandos, 
+                        é uma ferramenta poderosa para moldar o futuro.<br>
+                        O meu objetivo é me tornar uma desenvolvedora Full-Stack e assim poder contribuir para a criação de soluções impactantes e inovadoras 
+                        que vão além das fronteiras tradicionais.
+                        Portanto, a minha jornada como programadora é uma narrativa de dedicação, 
+                        aprendizado contínuo e uma paixão constante por transformar linhas de código em soluções significativas. 
+                        Estou animada com as oportunidades futuras e ansiosa para explorar as novas tecnologias e desafios que me aguardam nesta jornada emocionante.
+                    </p>
+                </div>
+            </div>
+            <div class="pg5">
+                <div id="contact"class="contact">
+                <br><br>
+                    <h5>Contato</h5>
+                <div class="phone">
+                    <img src="img/icon phone.png">
+                    <h3>Telefone</h3>
+                    <p>+55(11)973691164</p>
+                </div>
+                <div class="email">
+                    <img src="img/icon email.png">
+                    <h3>Email</h3>
+                    <p>assis.daphiny19@gmail.com</p>
+                </div>
+                <div class="local">
+                    <img src="img/icon location.png">
+                    <h3>Local</h3>
+                    <p>Mogi das Cruzes/SP</p>
+                </div>
+                </div>
+                <br><br><br>
+            </div>
+            </div>
+            <div class="footer">
+                <h2>Daphiny</h2><br>
+                <p>Desenvolvedora Full-Stack</p>
+                <div class="icon-footer">
+                    <a href="https://www.linkedin.com/in/daphinyassis/" target="_blank" ><img src="img/icon linkedin black.png"></a>
+                    <a href="https://github.com/DaphinyAssis" target="_blank" ><img src="img/icon github black.png"></a>
+                    <a href="https://wa.me/5511973691164" target="_blank" ><img src="img/icon whatsapp black.png"></a>
+                    <a href="img/curriculo - daphiny assis.pdf" target="_blank" ><img src="img/icon cv black.png"></a>
+            </div>
+                <p class="copy">Daphiny Assis 2023 &#169</p>
+                </div>
 
     <!-- <div class="main-container">
     <div class="header">
