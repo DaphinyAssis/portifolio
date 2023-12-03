@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-container">
+    <header>
+        <a href="#" onclick="scrollToTop()" class="logo">DAPHINY</a>
+    
+        <ul class="navlist">
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h5>Olá, meu nome é</h5>
+            <h5 style="color: #b068bc;">Daphiny.</h5>
+            <p>Sou uma estudante de programação me capacitando  
+            para ser uma desenvolvedora Full-Stack!</p>
+            <a href="#">VER PORTFÓLIO</a>
+        </div>
+
+        <div class="banner-img">
+            <img src="img/Programming.gif">
+        </div>
+    </section>
+
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/daphinyassis/" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+        <a href="https://github.com/DaphinyAssis" target="_blank" ><i class="ri-github-line"></i></a>
+        <a href="https://wa.me/5511973691164" target="_blank" ><i class="ri-whatsapp-line"></i></a>
+        <a href="#"><i class="ri-profile-line"></i></a>
+    </div>
+
+    <div class="scroll-down">
+        <a href="#"><i class="ri-arrow-down-s-line"></i></a>
+    </div>
+
+
+    <!-- <div class="main-container">
     <div class="header">
      <div class="scroll-top">
         <button class="logo" id="btnTop" onclick="scrollToTop()">Daphiny</button>
@@ -177,7 +222,7 @@
                         <p class="copy">Daphiny Assis 2023 &#169</p>
                         </div>
     
-</div>
+</div> -->
     <script src="script.js"></script>
 </body>
 </html>

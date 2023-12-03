@@ -1,4 +1,366 @@
+@font-face {
+    font-family: LEMONMILK;
+    src: url(fonts/LEMONMILK-Regular.otf);
+}
 
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:33px 9%;
+    background: transparent;
+}
+body{
+    background: aliceblue;
+    color:black
+}
+.logo{
+    font-family: LEMONMILK;
+    font-size:40px;
+    font-weight: 700;
+    color:black;
+}
+.logo:hover{
+    color:#b068bc;
+    transition: all .55s ease;
+}
+.navlist{
+    display:flex;
+}
+.navlist a{
+    color:black;
+    margin-left: 60px;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom:2px solid #b068bc;
+}
+#menu-icon{
+    color:black;
+    font-size: 45px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+    
+}
+.banner{
+    height:100%;
+    width:100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:2rem;
+}
+section{
+    padding: 0% 19%;
+}
+.banner-text h5{
+    font-family: LEMONMILK;
+    font-size: 60px;
+    line-height: 1;
+    margin: 0px 0 10px;
+}
+.banner-text p{
+    font-size: 26px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.banner-img img{
+    position: absolute;
+    top:30%;
+    right:5%;
+    width: 650px;
+    height: auto;
+}
+.banner-text a{
+    color:white;
+    background: #b068bc;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-family: LEMONMILK;
+    font-size: 18px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.banner-text a:hover{
+    color:#b068bc;
+    background: transparent;
+    border: 1px solid #b068bc;
+    transform: translateX(8px);
+}
+.icons{
+    position: absolute;
+    top:47%;
+    left:4%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin:15px 0;
+    font-size: 40px;
+    color:black;
+    transition: all .50s ease;
+}
+.icons i:hover{
+    color:#b068bc;
+    transform: translateY(-5px);
+}
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 21px;
+    color:white;
+    background: #b068bc;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+@media (max-width:1920px){
+    .scroll-down{   
+    right: 3%;
+    transition: .2s;
+}
+    .logo{
+        font-size:30px;
+    }
+    .navlist a{
+        font-size: 25px;
+    }
+    .banner-text h5{
+        font-size: 54px;
+        transition: .2s;
+    }
+    .banner-text p{
+        font-size: 24px;
+        transition: .2s;
+    }
+    .banner-img img{
+        position: absolute;
+        top:25%;
+        width: 550px;
+        transition: .2s;
+    }
+   
+    .icons i{
+        font-size: 50px;
+        transition: .2s;
+    }
+    .banner-text a{
+        padding: 20px 42px;
+        font-size: 21px;
+        transition: .2s;
+    }
+
+}
+@media (max-width:1680px){
+    .icons i{
+        font-size: 40px;
+        transition: .2s;
+    }
+    .banner-text h5{
+        font-size: 45px;
+        transition: .2s;
+    }
+    .banner-text p{
+        font-size: 20px;
+        transition: .2s;
+    }
+    .banner-text a{
+        padding: 15px 30px;
+        font-size: 16px;
+        transition: .2s;
+    }
+}
+@media (max-width: 1440px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+    .banner-text h5{
+        font-size: 50px;
+        transition: .2s;
+    }
+    .banner-img img{
+        position: absolute;
+        top:30%;
+        width: 500px;
+        transition: .2s;
+    }
+
+}
+@media (max-width: 1366px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+    .banner-text p{
+        font-size: 35px;
+        transition: .2s;
+    }
+    .icon{
+        position: absolute;
+        top:30%;
+    }
+    .icons i{
+        
+        font-size: 30px;
+        transition: .2s;
+    }
+    
+
+}
+@media (max-width: 1280px){
+    .logo{
+        font-size:30px;
+    }
+    .navlist a{
+        font-size: 20px;
+    }
+    .banner-img img{
+        position: absolute;
+        top: 26%;
+        width:450px;
+        height: auto;
+    }
+    .banner-text h5{
+        font-size:40px;
+        margin: 0 0 30px;
+    }
+    .banner-text p{
+        font-size:18px;
+        margin: 0 0 30px;
+    }
+
+    
+
+}
+@media (max-width: 1152px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .banner-text{
+        text-align: center;
+        padding-top: 115px;
+    }
+    .banner-text h5{
+        font-size: 50px;
+    }
+    .banner-text p{
+        font-size: 25px;
+        margin: 0 0 30px;
+    }
+    .banner-img{
+        display: none;
+    }
+    .banner{
+        height: 100%;
+        gap:1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons{
+        position: absolute;
+        top:32%;
+        left: 40%;
+        align-items: center;
+    }
+    .icons i{
+        display: inline-block;
+    }
+    .scroll-down{
+        display: none;
+    }
+
+}
+@media (max-width: 800px){
+    #menu-icon{
+        display:block;
+    }
+    .navlist{
+        position: absolute;
+        top:100%;
+        right:-100%;
+        width:300px;
+        height:60vh;
+        background: #c2a0cd;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 10px;
+        display: block;
+        margin: 7px 0;     
+    }
+    .navlist.open{
+        right:0;
+    }
+    .logo{
+        font-size:20px;
+    }
+    .banner-text h5{
+        display: inline-block;
+        font-size: 30px;
+    }
+    .banner-text p{
+        font-size: 17px;
+        margin: 0 0 30px;
+    }
+    .banner-text a{
+        padding: 10px 20px;
+        font-size: 10px;
+        transition: .2s;
+    }
+    .icons{
+        position: absolute;
+        top:35%;
+    }
+}
+
+@media (max-width: 680px){
+    
+}
+
+
+/* 
 
 @font-face {
     font-family: Coolvetica;
@@ -663,4 +1025,4 @@ position: absolute;
     }
     
 
-}
+} */
