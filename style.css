@@ -11,6 +11,11 @@
     list-style: none;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
+    scroll-behavior: smooth !important;
+}
 header{
     position: fixed;
     right: 0;
@@ -21,11 +26,14 @@ header{
     align-items: center;
     justify-content: space-between;
     padding:33px 9%;
-    background: transparent;
+    background: aliceblue;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
 }
 body{
+    width: 100%;
     background: aliceblue;
-    color:black
+    color:black;
+    scroll-behavior: smooth;
 }
 .logo{
     font-family: LEMONMILK;
@@ -143,9 +151,103 @@ section{
 .scroll-down i:hover{
     transform: translateY(-5px);
 }
+
+.skills{
+    
+    position: absolute;
+    top:70rem;  
+    left:0rem;
+    width: 100;
+    height: 100;
+    margin: 0 15px 0 15px;
+}
+.container-skills{
+    display: flex;
+}
+.skills-text h5{ 
+        text-align: center;
+        font-size: 50px;
+        font-family: LEMONMILK;
+        line-height: 1;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+}
+
+
+.skills-btn button {
+    position: relative;
+    left:5rem;
+    min-width: 350px;   
+    padding: 30px 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 1px rgba(188,192,196,1);
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #000;
+    background-size: 45px;
+    padding-left: 40px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.skills button.html{
+    background: url('img/skills/icon html.png') no-repeat 10px center;
+}
+.skills button.css{
+    background: url('img/skills/icon css.png') no-repeat 10px center;
+}
+.skills button.js{
+    background: url('img/skills/icon js.png') no-repeat 10px center;
+}
+.skills button.typescript{
+    background: url('img/skills/icon typescript.png') no-repeat 10px center;
+}
+.skills button.node{
+    background: url('img/skills/icon nodejs.png') no-repeat 10px center;
+}
+.skills button.express{
+    background: url('img/skills/icon express.png') no-repeat 10px center;
+}
+.skills button.mysql{
+    background: url('img/skills/icon mysql.png') no-repeat 10px center;
+}
+.skills button.postgre{
+    background: url('img/skills/icon postgresql.png') no-repeat 10px center;
+}
+.skills button.csharp{
+    background: url('img/skills/icon c sharp.png') no-repeat 10px center;
+}
+.skills button.python{
+    background: url('img/skills/icon python.png') no-repeat 10px center;
+}
+.skills button.java{
+    background: url('img/skills/icon java.png') no-repeat 10px center;
+}
+.skills button.excel{
+    background: url('img/skills/icon excel.png') no-repeat 10px center;
+}
+.skills button.figma{
+    background: url('img/skills/icon figma.png') no-repeat 10px center;
+}
+.skills button.canva{
+    background: url('img/skills/icon canva.png') no-repeat 10px center;
+}
+.skills button.photoshop{
+    background: url('img/skills/icon photoshop.png') no-repeat 10px center;
+}
+.skills button.ae{
+    background: url('img/skills/icon ae.png') no-repeat 10px center;
+}
+
+
+
 @media (max-width:1920px){
     .scroll-down{   
     right: 3%;
+    top:45rem;
     transition: .2s;
 }
     .logo{
@@ -178,7 +280,19 @@ section{
         font-size: 21px;
         transition: .2s;
     }
+    .skills-text h5{
+        font-size: 48px;
+        transition: .2s;
+    }
+    .skills{
+        position: absolute;
+        top:50rem;  
+    }
+    .skills-btn button {
+        position: relative;
+        left:12rem;
 
+    }
 }
 @media (max-width:1680px){
     .icons i{
@@ -198,6 +312,15 @@ section{
         font-size: 16px;
         transition: .2s;
     }
+    .skills-text h5{
+        font-size: 39px;
+        transition: .2s;
+    }
+    .skills-btn button {
+        position: relative;
+        left:8rem;
+        min-width: 250px;
+    }
 }
 @media (max-width: 1440px){
     header{
@@ -213,24 +336,38 @@ section{
         transition: .2s;
     }
     .banner-text h5{
-        font-size: 50px;
+        font-size: 43px;
+        transition: .2s;
+    }
+    .banner-text p{
+        font-size: 18px;
         transition: .2s;
     }
     .banner-img img{
         position: absolute;
-        top:30%;
+        top:28%;
         width: 500px;
         transition: .2s;
     }
-
+    .skills-text h5{
+        font-size: 40px;
+        transition: .2s;
+    }
+    .skills-btn button {
+        position: relative;
+        left:8rem;
+        min-width: 350px;
+    }
 }
+
+
 @media (max-width: 1366px){
     section{
         padding: 0 12%;
         transition: .2s;
     }
     .banner-text p{
-        font-size: 35px;
+        font-size: 16px;
         transition: .2s;
     }
     .icon{
@@ -241,6 +378,21 @@ section{
         
         font-size: 30px;
         transition: .2s;
+    }
+    .banner-img img{
+        position: absolute;
+        top: 19%;
+    }
+    .scroll-down{
+        position: absolute;
+        top:35rem;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .navlist a{
+        font-size: 18px;
+        
     }
     
 
@@ -259,12 +411,25 @@ section{
         height: auto;
     }
     .banner-text h5{
-        font-size:40px;
+        font-size:45px;
         margin: 0 0 30px;
     }
     .banner-text p{
         font-size:18px;
         margin: 0 0 30px;
+    }
+    .scroll-down{
+        position: absolute;
+        top:45rem;
+    }
+    .skills-text h5{
+        font-size: 45px;
+        transition: .2s;
+    }
+    .skills-btn button {
+        position: relative;
+        left:4rem;
+        min-width: 250px;
     }
 
     
@@ -305,6 +470,11 @@ section{
     }
     .scroll-down{
         display: none;
+    }
+    .skills-btn button {
+        position: relative;
+        left:4rem;
+        min-width: 220px;
     }
 
 }
@@ -353,11 +523,25 @@ section{
         position: absolute;
         top:35%;
     }
-}
+    .skills-btn button {
+        position: relative;
+        left:4rem;
+        min-width: 300px;
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+    .skills-text h5{
+        font-size: 30px;
+        transition: .2s;
+    }
+    .skills{
+        position: absolute;
+        top:35rem;  
+    }
 
-@media (max-width: 680px){
     
 }
+
 
 
 /* 
