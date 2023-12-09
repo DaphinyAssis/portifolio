@@ -263,13 +263,12 @@ section{
 
 .project-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap:wrap;
+    justify-content: space-around;
 }
 
 
 .project-card {
-    position: relative;
-    top:-1rem;
     width: 30%;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -277,6 +276,8 @@ section{
     margin: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 .project-card:hover {
     transform: scale(1.05);
@@ -288,80 +289,60 @@ section{
     height: auto;
     border-bottom: 1px solid #ccc;
 }
+.project-details {
+    flex: 1; /* Faz com que os detalhes ocupem todo o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
 
 .project-details h3 {
+    display: inline-flex;
     text-align: left;
-    margin-left: 1rem;
     font-size: 20px;
     font-family: 'Urbanist', sans-serif;
     color: #201b2c;
     max-width: 60%; 
+    margin-bottom: 1px;
 }
 
 .project-details p {
-    position: relative;
-    top:-2rem;
-    text-align: center;
-    margin-top: 25px;
-    width:90%;
-    margin-right: 1px;
-    margin-left: 1px;
-    margin: 6px 6px;
+    flex-grow:1;
+    text-align: left;
     font-size: 12px;
     color: #555;
+    margin-bottom: 1rem;
+
 }
-
-.project-buttons a {
-
-   align-content: center;
-    display: inline-flex;
-    border: none;
-    margin:none;
-    padding: 5px 5px;
-    border-radius: 5px;
-    background-color: #b869c6;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.project-buttons {
+    align-self: flex-end;
 }
-
-
-
-.project-buttons img {
-    border: none;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-
-.project-buttons a:hover {
-    background-color: #9358a4;
-}
-.project-buttons-stock a{
+.project-buttons a{
+    position: relative;
+    top: -3rem;
+    right:1px;
     display: inline-flex;
     align-items: center;
     border: none;
-    margin:none;
-    padding: 5px 5px;
+    padding: 5px 10px;
     border-radius: 5px;
     background-color: #b869c6;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-right: 5px;
 }
-.project-buttons-stock img {
+.project-buttons a:hover{
+    background-color: #9358a4;
+}
+.project-buttons img {
+    display: inline-block;
     border: none;
     width: 20px;
     height: 20px;
-    vertical-align: middle;
+    vertical-align: right;
 }
-.project-buttons-stock a:hover {
-    background-color: #9358a4;
-}
-
 .project-details button{
-    position: relative;
-    top:-55px;
     text-align: center;
     width: auto;
     height: auto;
@@ -374,6 +355,7 @@ section{
     font-size: 9px;
     background-size: 45px;
     margin: 0 0 0 1px;
+    align-self: flex-end;
 }  
 
 .pg4{
@@ -623,29 +605,9 @@ position: absolute;
         
     }
     .pg3{
-        position: relative;
-        top:10rem;
-    }
-    .project-details p{
-    text-align: center;
-    margin-top: 25px;
-    width: 90%;
-    margin-left:35px;
-    }
-    .project-buttons a{
-        position: relative;
-        top:-25px;
-        left:17rem;
-    }
-    .project-buttons-stock a{
-        position: relative;
-        top:-40px;
-        left:17rem;
-    }
-    .btn-container{
         position: absolute;
-        left:25%;
-        right:10%;
+            top:75rem;
+
     }
 
     .pg4{
